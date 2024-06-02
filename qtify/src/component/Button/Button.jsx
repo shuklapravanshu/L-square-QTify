@@ -1,8 +1,9 @@
 import React from "react";
-import navbarStyles from "../Navbar/Navbar.module.css";
+import styles from "./Button.module.css";
 
-function Button({ text }){
-    return <button className={navbarStyles.feedback}>{ text }</button>
+
+
+function Button({children}){
+return <button className={styles.button}>{children}</button>
 }
-
 export default Button;

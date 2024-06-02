@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './component/HomePage/HomePage';
+import Navbar from './component/Navbar/Navbar';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
           <div className="App-header">
             <Routes>
-              <Route path="/" element={< HomePage />} />
+              <Route path="/" element={< Navbar />} />
             </Routes>
           </div>
         </div>

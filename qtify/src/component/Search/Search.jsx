@@ -1,28 +1,24 @@
-import searchIcon from "../../assets/search-icon.svg";
-import styles from "./search.module.css";
-import navbarStyles from "../Navbar/Navbar.module.css";
+import React from "react";
+import styles from "./Search.module.css";
+import SearchIcon from "@mui/icons-material/Search";
 
-const Search = () => {
 
-  return (
-    <>
-      <div className={navbarStyles.searchField}>
-        <input
-          type="search"
-          placeholder={
-            "Search a Song of Your Choice"
-          }
-        />
-        <div>
-          <img
-            src={searchIcon}
-            alt="Search Icon"
-            className={styles.searchIcon}
-          />
-        </div>
-      </div>
-    </>
-  );
-};
 
+function Search({placeholder}){
+    return(
+        <div style={{position:"relative"}}>
+        <form className={styles.wrapper}  >
+          <div>
+            <input className={styles.search} placeholder={placeholder} />
+          </div>
+          
+          <div>
+              <button className={styles.searchButton} type='submit'>
+                <SearchIcon/>
+              </button>
+          </div>
+        </form>
+          </div>
+    )
+}
 export default Search;
