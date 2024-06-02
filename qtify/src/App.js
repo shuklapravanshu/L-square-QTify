@@ -1,19 +1,16 @@
 import React from 'react';
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import StyledEngineProvider from "@mui/material/StyledEngineProvider";
 import Navbar from './component/Navbar/Navbar';
+import Hero from './component/Hero/Hero';
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-          <div className="App-header">
-            <Routes>
-              <Route path="/" element={< Navbar />} />
-            </Routes>
-          </div>
-        </div>
-    </Router>
+    <StyledEngineProvider injectFirst>
+    <Navbar />
+    <Hero/>
+  </StyledEngineProvider>
   );
 }
 
