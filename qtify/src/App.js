@@ -6,6 +6,7 @@ import Navbar from './component/Navbar/Navbar';
 import Hero from './component/Hero/Hero';
 import TopAlbums from './component/TopAlbums/TopAlbums';
 import NewAlbums from './component/NewAlbums/NewAlbums';
+import Songs from './component/Songs/Songs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Hero/>
     <TopAlbums/> 
     < NewAlbums />
+    < Songs />
   </StyledEngineProvider>
    </div>
   );
